@@ -1,14 +1,18 @@
 <template>
-<div>
-    <slot></slot>
-    <h2>qdfqdfqdsfqsdfqdsfqd</h2>
-</div>
+    <div>
+        <div class="title">
+            <slot name="title"></slot>
+            <span><slot name="subtitle">The Subtitle</slot></span>
+        </div>
+        <hr>
+        <div>
+            <slot></slot>
+        </div>
+    </div>
 </template>
 
 <script>
-export default {
-
-};
+export default {};
 </script>
 
 <style scoped>
@@ -21,10 +25,11 @@ div {
 }
 
 h2 {
-    color: red;
+  color: red;
 }
 
+.title {
+  font-style: italic;
+}
 </style>
-
-
 
